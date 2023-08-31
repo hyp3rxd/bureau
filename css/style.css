@@ -1,1 +1,331 @@
-dasda
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap'); */
+
+body{
+    margin: 0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.26px;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    color: #000;
+    font-family: "IBM Plex Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+    letter-spacing: -1.6px;
+    margin-bottom: 16px;
+}
+main.active{
+    padding-top: 72px;
+}
+main p{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.26px;
+    margin-bottom: 24px;
+}
+header.active{
+    position: fixed;
+    background: white;
+    width: 100%;
+}
+.container{
+    padding: 0 18px;
+}
+.desk-hide{
+    display: block;
+}
+.mob-hide{
+    display: none;
+}
+.poslugy{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.poslugy p{
+    margin-bottom: 5px;
+}
+.poslugy p:first-child{
+    margin-bottom: 18px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+.lang a{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.665px;
+}
+.lang a.active{
+    color: black;
+}
+.hamburger {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+}
+.hamburger .line {
+    height: 2px;
+    background-color: black;
+    width: 17px;
+    display: block;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.links{
+    /* margin-bottom: 30px; */
+}
+.links a, .present_link{
+    display: inline-block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%; /* 20.88px */
+    letter-spacing: -0.9px;
+    text-decoration-line: underline;
+    margin-bottom: 15px;
+    color: black;
+}
+.links span{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%; /* 20.88px */
+    padding: 0 10px;
+}
+.numo{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin-bottom: 30px;
+    margin: 48px 0;
+}
+.projects_title{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    padding-bottom: 15px;
+    border-bottom: 0.738px solid #000;
+}
+.projects_item{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 0.738px solid #000;  
+}
+.projects_item_text, .projects_item_year{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.65px;
+}
+.copyright{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.65px;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 36px;
+}
+.core_descr{
+    margin-bottom: 5px;
+}
+a.core_descr{
+    display: block;
+    margin: 24px 0;
+}
+.core_item img{
+    margin-bottom: 24px;
+}
+.core_title{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.kostyl.project img{
+    margin-top: -5px;
+}
+.menu-mob{
+    display: none;
+}
+.menu-mob.active{
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.72);
+    height: 100vh;
+    width: 100%;
+    top: 68px;
+    left: 0;
+}
+.menu-mob.active .menu-mob_inner{
+    display: block;
+    position: absolute;
+    background: white;
+    padding: 16px;
+    min-width: 290px;
+    transform: translateX(-50%);
+    top: 10px;
+    left: 50%;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 1500px;
+        /* margin: 0 auto; */
+        padding: 0 24px;
+    }
+
+    main .container{
+        padding: 0;
+        padding-left: 24px;
+    }
+    .desk-hide{
+        display: none;
+    }
+    .mob-hide{
+        display: block;
+    }
+    h1{
+        margin-bottom: 16px;
+    }
+    main p{
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 24px;
+        max-width: 590px;
+    }
+    header{
+        position: static;
+    }
+    header, footer{
+        width: 20%;
+        max-width: 364px;
+        min-width: 364px;
+    }
+    header{
+        height: 100vh;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    main{
+        margin-top: 20px;
+        width: 80%;
+        height: 100vh;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+      }
+    main::-webkit-scrollbar {
+        display: none;
+      }
+    body{
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        /* max-width: 1440px; */
+    }
+    .hamburger{
+        display: none;
+    }
+    .kostyl{
+        /* max-height: 465px; */
+    }
+    .project{
+        margin-top: 0;
+    }
+    .kostyl.project img{
+        width: 100%;
+    }
+    .core_inner{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+    .core_item{
+        width: 49%;
+    }
+    .core_descr{
+        margin-bottom: 10px;
+    }
+    a.core_descr{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .copyright{
+        margin-bottom: 0;
+    }
+    .numo{
+        margin: 24px 0;
+        display: block;
+    }
+    .menu-mob{
+        display: block;
+    }
+}
